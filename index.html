@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width">
-<title>JAX KIDS APP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAX KIDS APP - Safe TikTok for Kids</title>
 <style>
-body{margin:0;background:#000;color:#fff;font-family:Arial}
-.top{background:#FFCC00;color:#000;padding:15px;text-align:center;font-weight:bold}
-.video-box{height:85vh;background:#111;display:flex;align-items:center;justify-content:center;flex-direction:column;border:3px solid #00D2FF}
-button{background:#FF0050;color:#fff;border:none;padding:12px 20px;border-radius:25px;margin:5px;font-weight:bold}
-.control{background:#222;padding:10px;margin:10px;border-radius:10px;border-left:5px solid #FFCC00}
+body{margin:0;background:#000;color:#fff;font-family:Arial;overflow:hidden}
+.header{background:linear-gradient(90deg,#FFCC00,#00D2FF);color:#000;padding:10px;display:flex;align-items:center;justify-content:space-between}
+.logo{width:45px;height:45px;border-radius:50%;background:#fff;padding:2px}
+.feed{height:calc(100vh - 65px);overflow-y:scroll;scroll-snap-type:y mandatory}
+.video{height:calc(100vh - 65px);scroll-snap-align:start;position:relative;display:flex;align-items:center;justify-content:center;background:#111;border-bottom:2px solid #333}
+.info{position:absolute;bottom:80px;left:15px;max-width:70%}
+.btns{position:absolute;right:15px;bottom:80px;display:flex;flex-direction:column;gap:15px}
+.btn{width:50px;height:50px;border-radius:50%;border:none;font-size:22px;background:rgba(255,255,255,0.2);color:#fff}
+.reward{background:#FFCC00;color:#000;padding:4px 10px;border-radius:15px;font-weight:bold;font-size:12px;display:inline-block;margin:5px 0}
+.control{background:#1a1a1a;padding:8px 15px;font-size:11px;color:#FFCC00}
 </style>
 </head>
 <body>
-<div class="top">⭐ JAX KIDS APP - LIVE - YOU CONTROL ⭐</div>
 
-<div class="control">
-<b>YOUR CONTROL PANEL:</b><br>
-Weekly Fee: 1000 UGX (MTN & Airtel)<br>
-Viral: 10,000 views = 10% Pay<br>
-One Video One Pay: LOCKED 🔒<br>
-Pool: 500,000 UGX
+<div class="header">
+<div style="display:flex;align-items:center;gap:10px">
+<img class="logo" src="https://i.ibb.co/0jq7Q1g/jax-logo.png" onerror="this.src='https://via.placeholder.com/45/FFCC00/000?text=JAX'">
+<div>
+<b>JAX KIDS APP</b><br>
+<span style="font-size:10px">You Control • Safe for Kids</span>
+</div>
+</div>
+<div style="text-align:right;font-size:11px;color:#000">
+<b>Pool: 500K</b><br>MTN & Airtel ✓
+</div>
 </div>
 
-<div class="video-box">
-<h1>🎬 Talent Video</h1>
-<p>12,345 views - VIRAL! Paid 50k</p>
-<button>❤️ Like</button>
-<button>💬 Comment</button>
-<button>💰 Withdraw MTN/Airtel</button>
-<p>@kid_uganda</p>
-<p>My dance! #JAXKids</p>
+<div class="control">
+🎛️ YOU CONTROL: Fee 1000 UGX/week | Viral 10k = 10% | One Video One Pay 🔒 | AI Blocks Bad Acts ✓
+</div>
+
+<div class="feed">
+
+<div class="video">
+<div style="text-align:center">
+<h2>🎬 Talent Show</h2>
+<p style="color:#aaa">Swipe up for next ↓</p>
+<div class="reward">🔥 VIRAL! Paid 50,000 UGX - ONE TIME</div>
+</div>
+<div class="info">
+<b>@talent_kid_uganda</b>
+<p>My school dance! Parents paid via MTN 💛<br>#JAXKids #Talent #Uganda</p>
+<p style="font-size:12px;color:#0f0">✓ Parent Approved ✓ AI Safe ✓ You Control</p>
+</div>
+<div class="btns">
+<button class="btn">❤️<br><span style="font-size:10px">12k</span></button>
+<button class="btn">💬<br><span style="font-size:10px">1k</span></button>
+<button class="btn">💰<br><span style="font-size:10px">MTN</span></button>
+<button class="btn">⭐<br><span style="font-size:10px">Share</span></button>
+</div>
+</div>
+
+<div class="video" style="background:#1a1a1a">
+<div style="text-align:center">
+<h2>📚 ABC Learning</h2>
+<div class="reward">Growing: 500 views</div>
+</div>
+<div class="info">
+<b>@smart_kid_07</b>
+<p>Learning ABCs! #Education #JAXKids</p>
+</div>
+<div class="btns">
+<button class="btn">❤️</button>
+<button class="btn">💬</button>
+<button class="btn">💰</button>
+</div>
+</div>
+
 </div>
 
 <script>
-alert("JAX KIDS APP LOADED! You are coding from GitHub!");
+console.log("JAX KIDS APP LIVE - https://jax562-ops.github.io/JAX-KIDS-BACKEND/");
+console.log("YOU CONTROL EVERYTHING - Edit config in index.js");
+console.log("MTN & Airtel Enabled - 1000 UGX/week");
+console.log("One Video One Pay LOCKED - Viral 10%");
 </script>
 </body>
 </html>
